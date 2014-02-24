@@ -30,8 +30,8 @@
 
 
 - (IBAction)worldAction:(id)sender {
-    self.worldText.text = [NSString stringWithFormat:@"%d", counter];
-    counter++;
+    self.worldText.text = [NSString stringWithFormat:@"Кнопку нажимали %d раз.", counter];
+        counter++;
 }
 
 

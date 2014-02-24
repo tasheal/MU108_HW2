@@ -27,8 +27,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 - (IBAction)worldAction:(id)sender {
-    self.worldText.text = [NSString stringWithFormat:@"Hello World!"];
+    self.worldText.text = [NSString stringWithFormat:@"%d", counter];
+    counter++;
 }
+
 
 @end

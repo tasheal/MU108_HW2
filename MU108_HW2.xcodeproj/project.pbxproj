@@ -19,6 +19,8 @@
 		991EE89D18BB381600B016AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991EE88518BB381600B016AE /* UIKit.framework */; };
 		991EE8A518BB381600B016AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 991EE8A318BB381600B016AE /* InfoPlist.strings */; };
 		991EE8A718BB381600B016AE /* MU108_HW2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991EE8A618BB381600B016AE /* MU108_HW2Tests.m */; };
+		991EE8B118BB382800B016AE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991EE8B018BB382800B016AE /* Storyboard.storyboard */; };
+		991EE8B418BB383E00B016AE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991EE8B318BB383E00B016AE /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		991EE8A218BB381600B016AE /* MU108_HW2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MU108_HW2Tests-Info.plist"; sourceTree = "<group>"; };
 		991EE8A418BB381600B016AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		991EE8A618BB381600B016AE /* MU108_HW2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MU108_HW2Tests.m; sourceTree = "<group>"; };
+		991EE8B018BB382800B016AE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		991EE8B218BB383E00B016AE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		991EE8B318BB383E00B016AE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				991EE89118BB381600B016AE /* AppDelegate.m */,
 				991EE89318BB381600B016AE /* Images.xcassets */,
 				991EE88818BB381600B016AE /* Supporting Files */,
+				991EE8B018BB382800B016AE /* Storyboard.storyboard */,
+				991EE8B218BB383E00B016AE /* MainViewController.h */,
+				991EE8B318BB383E00B016AE /* MainViewController.m */,
 			);
 			path = MU108_HW2;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 			files = (
 				991EE88C18BB381600B016AE /* InfoPlist.strings in Resources */,
 				991EE89418BB381600B016AE /* Images.xcassets in Resources */,
+				991EE8B118BB382800B016AE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				991EE89218BB381600B016AE /* AppDelegate.m in Sources */,
+				991EE8B418BB383E00B016AE /* MainViewController.m in Sources */,
 				991EE88E18BB381600B016AE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

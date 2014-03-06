@@ -21,6 +21,7 @@
 		991EE8A718BB381600B016AE /* MU108_HW2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991EE8A618BB381600B016AE /* MU108_HW2Tests.m */; };
 		991EE8B118BB382800B016AE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991EE8B018BB382800B016AE /* Storyboard.storyboard */; };
 		991EE8B418BB383E00B016AE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991EE8B318BB383E00B016AE /* MainViewController.m */; };
+		997F429E18BE05FC006CF0F7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 997F429D18BE05FC006CF0F7 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		991EE8B018BB382800B016AE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		991EE8B218BB383E00B016AE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		991EE8B318BB383E00B016AE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		997F429C18BE05FC006CF0F7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		997F429D18BE05FC006CF0F7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		991EE88718BB381600B016AE /* MU108_HW2 */ = {
 			isa = PBXGroup;
 			children = (
+				99CA372B18BBA3EB00B6F4E2 /* img */,
 				991EE89018BB381600B016AE /* AppDelegate.h */,
 				991EE89118BB381600B016AE /* AppDelegate.m */,
 				991EE89318BB381600B016AE /* Images.xcassets */,
@@ -119,6 +123,8 @@
 				991EE8B018BB382800B016AE /* Storyboard.storyboard */,
 				991EE8B218BB383E00B016AE /* MainViewController.h */,
 				991EE8B318BB383E00B016AE /* MainViewController.m */,
+				997F429C18BE05FC006CF0F7 /* User.h */,
+				997F429D18BE05FC006CF0F7 /* User.m */,
 			);
 			path = MU108_HW2;
 			sourceTree = "<group>";
@@ -150,6 +156,13 @@
 				991EE8A318BB381600B016AE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99CA372B18BBA3EB00B6F4E2 /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +212,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Andrey Karpov";
 				TargetAttributes = {
+					991EE87D18BB381600B016AE = {
+						DevelopmentTeam = R9NW55SSZV;
+					};
 					991EE89818BB381600B016AE = {
 						TestTargetID = 991EE87D18BB381600B016AE;
 					};
@@ -248,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997F429E18BE05FC006CF0F7 /* User.m in Sources */,
 				991EE89218BB381600B016AE /* AppDelegate.m in Sources */,
 				991EE8B418BB383E00B016AE /* MainViewController.m in Sources */,
 				991EE88E18BB381600B016AE /* main.m in Sources */,
@@ -369,10 +386,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MU108_HW2/MU108_HW2-Prefix.pch";
 				INFOPLIST_FILE = "MU108_HW2/MU108_HW2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -382,10 +402,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MU108_HW2/MU108_HW2-Prefix.pch";
 				INFOPLIST_FILE = "MU108_HW2/MU108_HW2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -451,6 +474,7 @@
 				991EE8AC18BB381600B016AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		991EE8AD18BB381600B016AE /* Build configuration list for PBXNativeTarget "MU108_HW2Tests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +483,7 @@
 				991EE8AF18BB381600B016AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

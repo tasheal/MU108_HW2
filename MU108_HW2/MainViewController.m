@@ -11,6 +11,9 @@
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *worldText;
 @property (weak, nonatomic) IBOutlet UIButton *worldButton;
+@property (weak, nonatomic) IBOutlet UIButton *resetButton;
+@property (nonatomic) int clickCounter;
+
 
 @end
 
@@ -28,11 +31,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (IBAction)worldAction:(id)sender {
-    self.worldText.text = [NSString stringWithFormat:@"Кнопку нажимали %d раз.", counter];
-        counter++;
+    self.worldText.text = [NSString stringWithFormat:@"Кнопку нажимали %d раз.", self.clickCounter];
+        self.clickCounter++;
 }
 
+- (IBAction)resetAction:(id)sender {
+    self.clickCounter = 0;
+    self.worldText.text = [NSString stringWithFormat:@"Кнопку нажимали %d раз.", self.clickCounter];
+    
+}
 
 @end
